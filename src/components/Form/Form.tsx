@@ -1,17 +1,19 @@
+import FormStyled from "./FormStyled";
+
 const Form = (): React.ReactElement => {
   return (
-    <form>
+    <FormStyled>
       <h3>Enter here your words</h3>
-      <div className="form__controls">
-        <label htmlFor="firstWord">First word</label>
-        <input type="text" name="" id="firstWord" />
-      </div>
-      <div className="form__controls">
-        <label htmlFor="secondWord">Second word</label>
-        <input type="text" name="" id="secondWord" />
-      </div>
-      <button>Calculate</button>
-    </form>
+      <label className="form__label" htmlFor="firstWord">
+        First word
+      </label>
+      <input className="form__input" type="text" name="" id="firstWord" />
+      <label className="form__label" htmlFor="secondWord">
+        Second word
+      </label>
+      <input className="form__input" type="text" name="" id="secondWord" />
+      <button className="form__button">Calculate</button>
+    </FormStyled>
   );
 };
 
