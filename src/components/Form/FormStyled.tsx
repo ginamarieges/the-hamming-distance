@@ -5,7 +5,7 @@ const FormStyled = styled.form`
   flex-direction: column;
   gap: 15px;
   width: 300px;
-  height: 500px;
+  height: 400px;
   background-color: #7c9d96;
   padding: 20px;
   color: #f4f2de;
@@ -13,7 +13,6 @@ const FormStyled = styled.form`
   .form {
     &__label {
       text-transform: uppercase;
-      padding: 10px;
       padding-left: 0;
     }
 
@@ -27,6 +26,13 @@ const FormStyled = styled.form`
       background-color: #f4f2de;
       color: #7c9d96;
     }
+  }
+
+  .hamming-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 20px;
   }
 `;
 

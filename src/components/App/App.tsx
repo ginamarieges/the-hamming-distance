@@ -1,14 +1,12 @@
 import Form from "../Form/Form";
+import AppStyled from "./AppStyled";
 
 const App = (): JSX.Element => {
   return (
-    <>
-      <h1>The Hamming distance</h1>
-      <h2>
-        In this app you can calculate the Hamming distance between two words!
-      </h2>
+    <AppStyled>
+      <h1 className="title">The Hamming distance</h1>
       <Form />
-    </>
+    </AppStyled>
   );
 };
 
